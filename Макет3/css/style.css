@@ -1,0 +1,363 @@
+@import url('reset.css');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	color: #5f5f5f;
+	font-family: "Myriad Pro";
+}
+/* вспомогательные стили */
+h1,h2,h3{
+	text-transform: uppercase;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	color:#5f5f5f;
+}
+li{
+	list-style:none;
+	display:inline-block;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+/* top */
+.container{
+	width: 1000px;
+	margin:0 auto;
+}
+/* стрелки */
+.arrow-left, .arrow-right{
+	display:block;
+	font-size: 40px;
+	background-color: #5e5e5d;
+	color:white;
+	top:223px;
+	padding:22px 20px;
+}
+.arrow-left{
+	position: absolute;
+	left:0;
+}
+.arrow-right{
+	position: absolute;
+	right:0;
+}
+/* фон */
+.background{
+	background-image:url(../img/bg.jpg);
+	background-size:cover;
+	overflow: hidden;/* ! */
+}
+/* шапка */
+header{
+	background-color: white;
+}
+header:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* логотип */
+.logo{
+	margin:30px 0 0 18px;
+}
+.logo *{
+	display: inline-block;
+	line-height: 58px;
+	vertical-align: middle;
+	font-size:38px;
+	padding-right:4px;
+}
+/* правый блок*/
+header .pull-right{
+	text-align:right;
+}
+/* верхн€€ навигаци€ */
+.top-nav{
+	background-color: #76b2c3;
+	padding-left:4px;
+	margin-top:20px;
+	margin-right:-13px;
+	display:inline-block;
+}
+.top-nav .list-nav{
+	color: white;
+	line-height: 33px;
+	padding:0 9px;
+	border-left:2px solid white;
+	font-size:12px;
+}
+.top-nav .list-nav:first-child{
+	border:0;
+}
+.ico-nav{
+	line-height: 35px;
+	color: white;
+	margin-left:78px;
+}
+/* декор */
+.ris{
+	background-color: #76b2c3;
+	height: 35px;
+	width: 13px;
+	float:right;
+	position:relative;
+	top:6px;
+	transform: skewY(-45deg);
+	margin-left:10px;
+}
+/* нижн€€ навигаци€ */
+nav ul li{
+	margin:0 24px;
+	text-transform: uppercase;
+}
+nav ul li a{
+	color: #4999af;
+	font-size:14px;
+}
+nav{
+	padding:23px 0;
+	margin-right:58px;
+}
+/* голубое окно */
+.modal{
+	background-color: #4391a8;
+	color:white;
+	margin-top:204px;
+	margin-bottom:38px;
+	padding:21px 20px;
+	width: 420px;
+	font-size:34px;
+}
+/* контент */
+/* галере€ */
+.galeri{
+	overflow: hidden;
+}
+.galeri a{
+	display: block;
+	float: left;
+	width: 320px;
+	background-size:cover;
+	margin: 29px 0 0 20px;
+	overflow: hidden;
+}
+.galeri> :first-child{
+	margin-left:0;
+}
+/* изображени€ */
+.images1{
+	background-image: url(../img/pic1.jpg);
+}
+.images2{
+	background-image: url(../img/pic2.jpg);
+}
+.images3{
+	background-image: url(../img/pic3.jpg);
+}
+/* контент ихображений */
+.img-content{
+	min-width: 263px;
+	float:right;
+	text-align: center;
+	color: white;
+}
+/* блоки текста */
+.img-content h1{
+	margin-top:92px;
+	margin-bottom: 12px;
+	text-shadow:0px 1px 5px black, 0 0 0.5em #666;
+	font-size:43px;
+}
+.img-content h4{
+	line-height: 47px;
+	opacity:0.8;
+	font-size:15px;
+}
+/* иконка */
+.img-content i{
+	display:inline-block;
+	border: 2px solid white;
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	margin-left:27px;
+	border-radius:50%;
+}
+/* вариации цветов нижнего блока */
+.images1 h4{
+	background-color: #0066ff;
+}
+.images2 h4{
+	background-color: #00ff66;
+}
+.images3 h4{
+	background-color: #ff6600;
+}
+/* инфо блоки */
+.info-block{
+	overflow: hidden;
+}
+.info-block> div{
+	width: 50%;
+	float: left;
+	padding-top: 30px;
+	padding-bottom:33px;
+}
+.left-info> *{
+	margin-right:20px;
+}
+/* заголовки h2 */
+.general-text{
+	color:#4999af;
+	margin-bottom:24px;
+	font-size:20px;
+}
+/* блоки контейнеры */
+.data-block{
+	border-top:1px solid #d2cdc9;
+	padding:13px 0;
+	overflow: hidden;
+}
+/* содержимое блока контейнера */
+.data-block >*{
+	display:inline-block;
+	vertical-align: middle;
+}
+/* блок число */
+.data{
+	text-align: center;
+	color:#668333;
+	text-transform: uppercase;
+}
+.num{
+	font-size:28px;
+	font-weight: bold;
+}
+/* блок дн€ */
+.days{
+	margin-left:21px;
+}
+.days h3{
+	color:#f1715e;
+	margin-bottom:3px;
+	font-size:16px;
+}
+.days> div{
+	font-size:13px;
+}
+/* кнопка */
+.button-more{
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	background-color: #4999af;
+	line-height: 32px;
+	margin:9px 0;
+	padding:0 24px;
+	border-radius:7px;
+	float:right;
+}
+/* правый инфо блок */
+.right-info> *{
+	margin-left:20px;
+}
+p{
+	margin-bottom:22px;
+	font-size:14px;
+}
+.right-info a{
+	text-transform: uppercase;
+	color:#f1715e;
+	font-size:14px;
+}
+/* футтер */
+footer{
+	background-color: #525252;
+	padding:29px 0;
+}
+.top-foot h2{
+	color:white;
+	font-size:20px;
+	margin-bottom:25px;
+}
+/* верхний футер */
+.top-foot{
+	overflow: hidden;
+}
+/* 1 колонка футера */
+.signup{
+	float:left;
+	width:36.8%
+}
+.signup a{
+	display:block;
+	text-transform: uppercase;
+	color:white;
+	background-color: #4999af;
+	line-height: 37px;
+	text-align: center;
+	font-size:18px;
+	width: 275px;
+	border-radius:7px;
+	margin-bottom: 48px;
+}
+/* 2 колонка футера */
+.times{
+	float:left;
+	width: 38.5%;
+}
+.tim-tex-1{
+	font-size:20px;
+	color: #f3eeea;
+}
+.tim-tex-2{
+	margin-top: 6px;
+	color: #b3b3b3;
+	font-size:12px;
+}
+/* 3 колонка футера */
+.social{
+	float:left;
+	width: 24.4%;
+}
+/* соц кнопки */
+.ico-social{
+	overflow: hidden;
+	padding-top: 8px;
+}
+.ico-social a{
+	margin-left:8px;
+	float: left;
+}
+.ico-social :first-child{
+	margin:0;
+}
+.ico-social i{
+	background-color:#f1715e;
+	border-radius:50%;
+	width: 32px;
+	height: 32px;
+	color: #525252;
+	text-align: center;
+	line-height: 32px;
+	font-size:20px;
+}
+/* нижний футер */
+.bott-foot{
+	border-top:1px solid #6b6b6a;
+	padding-top: 15px;
+	padding-bottom:6px;
+	color: #b3b3b3;
+	font-size:12.2px;
+}
+
