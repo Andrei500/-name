@@ -1,0 +1,147 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+	margin:0;
+	padding:0;
+	font-family:'Montserrat';
+}
+
+.container{
+	width:1024px;
+	margin:0 auto;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	color:silver;
+}
+/* шапка */
+nav{
+	background-color:#373c3f;
+	text-transform:uppercase;
+}
+nav ul li{
+	display:inline-block;
+}
+nav ul li a{
+	font-size:14px;
+	letter-spacing:0.4px;
+	margin:0 14px;
+	color:white;
+	line-height:97px;
+}
+nav ul :first-child a{
+	margin-left:54px;
+}
+/* голубой блок */
+.cent-head{
+	background-color:#13adc1;
+	padding:0 84px;
+	overflow:auto;
+}
+.cent-head h1{
+	margin-top:200px;
+	font-size:59px;
+	letter-spacing:3.5px;
+	color:white;
+	line-height:67px;
+}
+.cent-head a{
+	display:block;
+	color:white;
+	font-size:36px;
+	line-height:37px;
+	margin-bottom:165px;
+}
+.cent-head span{
+	color:#a8d6e0;
+}
+.cent-head span:hover{
+	color:silver;
+}
+.cent-head i{
+	font-size:29px;
+	margin-right:140px;
+	line-height:37px;
+	vertical-align:middle;
+	float:right;
+}
+/* низ шапки */
+.bott-head{
+	background-color:#27212c;
+	overflow:auto;
+}
+.bott-head a{
+	line-height:245px;
+	color:#9685a4;
+	font-size:32px;
+	margin-left:85px;
+}
+.butt{
+	transition:1s;
+	font-size:39px !important;
+	display:block;
+	width:228px;
+	float:right;
+	background-color:#bc3183;
+	color:white !important;
+	text-align:center;
+}
+.butt:hover{
+	transition:0.7s;
+	background-color:#31bc83;
+}
+/* контент */
+.galer{
+	overflow:hidden;
+}
+.galer img{
+	height:296px;
+}
+.galer a{
+	display:block;
+	float:left;
+	width:33.33333%;
+	height:296px;
+}
+.butt2{
+	background-color:#5b0fa1;
+	text-align:center;
+	font-size:30px;
+	color:white;
+	line-height:296px;
+}
+/* текст */
+article{
+	padding:51px 64px;
+	background-color:#ebebeb;
+	overflow:hidden;
+	padding-bottom:150px;
+}
+article h3{
+	color:#088ca5;
+	font-size:30px;
+	margin-left:14px;
+}
+section{
+	float:left;
+	width:50%;
+	color:#515151;
+}
+p{
+	font-size:13.2px;
+	letter-spacing:0.6px;
+	margin:20px 18px 30px 18px;
+	line-height:26px;
+}
+section:nth-child(3) p{
+	margin-left:30px !important;
+	margin-right:6px !important;
+}
+
+
+
+
+
+

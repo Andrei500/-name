@@ -1,0 +1,533 @@
+@import url('reset.css');
+*{
+	margin:0;
+	padding:0;
+}
+body, h1,h2,h3,h4{
+	text-transform: uppercase;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+/* контейнер */
+.container {   /* мобил версия */
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  width: 100%;
+}
+@media(min-width:426px){ nav{display: inline-block !important;}}
+@media (max-width:767px){
+	.container{width: 100%;}
+   .decor2, .decor{display: none !important;}
+   .logo{background-color: #444; font-size:10px; padding:11px 0; text-align: center; width: 29%;}
+   .logo img{width: 40px;}
+   nav{float:left !important; margin-top: 0 !important; width: 71% !important;}
+   nav a{ line-height: 62px !important;}
+   .slaider{padding:0 !important; margin-top:-5px; margin-left: -5px;}
+  .player1{width:calc(100% + 5px) !important; height: 500px !important; height: 328px !important;}
+  .right-h{display: none !important;}
+  .text-block{width: 50% !important; margin:10px; margin-right:5px;}
+  .player2{width: 50% !important;  margin:10px; margin-left:5px;}
+  .wr-cont{flex-direction:column !important;}
+  .wrap-twit{width: 100% !important; justify-content:flex-start !important; background-color: #f5c507; padding:20px 0; box-shadow: 0 0 15px rgba(0,0,0,1); position: relative;}
+  .twiter{width: 50% !important; justify-content: center !important; background-color: transparent !important;}
+  .date-block{display: none !important;}
+  .scroll{display: none !important;}
+  .cont{width: 100% !important;}
+  .numb-tw, .plus-tw{display: none !important;}
+  .coment{display: block !important;}
+  .right-foot{display: none !important;}
+  .arrow-left, .arrow-right{display: none !important;}
+  .logo span{display: none !important;}
+  .background-center, .background-set{background-image: none !important; padding:0 !important;}
+  .background-center h1{display: none !important;}
+  footer .container> span{display: none !important;}
+  .background-header{padding:0 !important;}
+  .background-header >.container{ box-shadow: 0 0 15px rgba(0,0,0,1); position:relative; z-index:1;}
+  .background-top a{ font-size:15px;}
+  .left-foot{width: auto; float:none !important; padding:0 20px !important;}
+  footer img{margin-left: 20px;}
+}
+@media (min-width: 768px) and (max-width: 1083px) {
+  .container {width: 750px;}
+  nav{display: none !important;} 
+  .menu{display: inline-block !important;}
+  .player1{width: 100% !important; height: 500px !important;}
+  .right-h{padding: 0 !important; margin: 0 auto; display: block !important; padding-top:30px !important;}
+  .text-block{width: 50% !important; margin:10px; margin-right:5px;}
+  .player2{width: 50% !important;  margin:10px; margin-left:5px;}
+  .wr-cont{flex-direction:column !important;}
+  .wrap-twit{width: 100% !important; justify-content:flex-start !important; background-color: #ec9e03; padding:20px 0;}
+  .twiter{width: 50% !important; justify-content: center !important; background-color: transparent !important;}
+  .date-block{display: none !important;}
+  .scroll{display: none !important;}
+  .cont{width: 100% !important;}
+  .numb-tw, .plus-tw{display: none !important;}
+  .coment{display: block !important;}
+  .right-foot{display: none !important;}
+  .left-foot{width: 100%;}
+  }
+@media (min-width: 1084px) and (max-width: 1199px) {
+  .container {
+    width: 1020px;
+  }}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }}
+/* респонсив моб версии */
+@media (max-width:600px){
+	nav{width: 100% !important;}
+	.logo{width: 100% !important; text-align: left; padding-left:40px; font-size:17px;}
+	.background-top a{font-size:12px;}
+	.normal-text{font-size:22px !important;}
+	.img-set{padding-bottom:50px !important;}
+	.action{width: 80px !important; height: 80px !important; line-height: 80px !important; font-size:10px !important;}
+}
+@media(max-width:500px){
+	.background-top a{font-size:9px;}
+	.background-top a{padding: 20px 0 !important;}
+	.cont{flex-direction:column;}
+	.player2{height: 230px; width: 100% !important; margin:0; background-position:center !important;}
+	.text-block{width:auto !important; margin: 0; box-shadow: 0 0 15px rgba(0,0,0,1); position: relative;}
+	
+	
+	
+}
+@media(max-width:420px){
+	.background-top a{font-size:7px;}
+	.wrap-twit{flex-direction:column; align-items:center; padding:10px 0 !important;}
+	.ic-twit{ line-height: 150px !important;}
+	.coment{width:100% !important;}
+	footer img{width: 60px; height: 60px;}
+	footer span{font-size:30px !important;}
+	.background-bottom h1{font-size: 1.4em; padding:0 20px;}
+	.left-foot{ padding:5px !important;}
+}
+@media (max-width:425px){
+	
+	
+	nav li{ float:none !important; width: 100% !important; border-bottom: 1px solid #dcb105; font-size:23px !important;}
+	nav {position: absolute !important; top:61px; left:0; z-index:5;}
+	.background-header> :nth-child(1){overflow: visible !important;}
+	.bars-logo{display:block !important;}
+	.logo{ width:calc(100% - 20px) !important; padding:0 0 0 20px !important; line-height: 60px; font-size:14px;}
+	.player1{height: 250px !important;}
+}
+
+ 
+
+.wr-cont{
+ display:flex;
+ width: 100%;
+}
+.cont{
+	width: 64%;
+}
+/* коментарии */
+.coment{
+	width: 50%;
+	display: none;
+}
+.messg{
+	background-color: rgba(255, 255, 255 ,0.7);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+	color:black;
+	padding:4px 17px;
+	border-radius:18px;
+	text-transform: none;
+	font-size:14px;
+	margin:7px auto;
+	width: 80%;
+	
+}
+.inp{
+	margin:7px auto;
+	margin-top:20px;
+	overflow: hidden;
+	width: 90%;
+}
+.texti{
+	border-radius: 11px 0 0 11px;
+	float: left;
+	border:1px solid #d0a806;
+	height: 29px;
+	width: calc(60% - 2px);
+}
+.sub{
+	width: calc(40% - 2px);
+	border-radius: 0 11px 11px 0;
+	float: left;
+	text-align: center;
+	background-color: #e6a523;
+	border:1px solid #d0a806;
+	line-height: 29px;
+	color: white;
+}
+/* задний фон */
+.background-set{
+	background-image: url(../img/hetoce.png);
+	background-size:cover;
+	background-position:center;
+}
+/* шапка */
+header{
+	overflow: hidden;
+}
+header> *{
+	vertical-align: middle;
+}
+.background-header {
+	background-image: url(../img/bghead.png);
+	background-size:cover;
+	padding:28px 0;
+	background-position:center;
+}
+/* логотип */
+.logo{
+	display:inline-block;
+	float:left;
+}
+.logo *{
+	display:inline-block;
+	color: white;
+	vertical-align: middle;
+}
+.bars-logo{
+	float: right;
+	text-align: center;
+	font-size:30px;
+	background-color: #333;
+	line-height: 55px;
+	display: none;
+	width: 60px;
+	height: 61px;
+}
+.logo span{
+	line-height: 21px;
+	vertical-align: bottom;
+	font-size:11px;
+}
+/* кнопка */
+.menu{
+	display: none;
+	float:right;
+	color: white;
+	font-size:50px;
+	line-height: 83px;
+	text-align: center;
+	width: 83px;
+	border-radius:15px;
+}
+/* навигация */
+nav{
+	margin-top:42px;
+	display: inline-block;
+	float:right;
+	position: relative;
+	width: 454px;
+}
+nav ul{
+	background-color: #f5c506;
+	position: relative;
+	overflow: hidden;
+}
+/* декор навигации */
+.decor2, .decor{
+	position: absolute;
+	height: 41px;
+	opacity:0.5;
+	background-color: #f5c506;
+	width: 100%;
+}
+.decor{
+	top:-4px;
+	left:-3px;
+}
+.decor2{
+	top:-8px;
+	left:-7px;
+}
+/* кнопки навигации */
+nav li{
+	display: inline-block;
+	float:left;
+	width: 33%;
+	text-align: center;
+	border-left:1px solid #dcb105;
+}
+nav a{
+	color: #b99403;
+	line-height: 41px;
+	display: block;
+}
+nav i{
+	margin-right:10px;
+	font-size:20px !important;
+}
+/* стрелки */
+.arrow-left, .arrow-right{
+	position:absolute;
+	color:white;
+	background-color: #c4a20c;
+	line-height: 57px;
+	text-align: center;
+	width: 32px;
+	top:150px;
+	font-size:24px;
+}
+.arrow-left{
+	left:0;
+}
+.arrow-right{
+	right:0;
+}
+/* слайдер */
+.slaider .container>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.slaider{
+	padding:50px 0;
+	position:relative;
+}
+/* плеер */
+.player1{
+	background-image: url(../img/play1.png);
+	background-size:cover;
+	width: 557px;
+	height: 335px;
+	background-position:center;
+}
+/* заголовки h1 */
+.right-h{
+	font-size:30px;
+	padding-left:30px;
+}
+.text-yellow{
+	color: #f5c506;
+	text-align: center;
+}
+.text-white{
+	color:white;
+	text-align: center;
+}
+/* белая панель */
+.background-top{
+	background-image: url(../img/bgtop.png);
+	background-size:cover;
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+	position: relative;
+	background-position:center;
+}
+.background-top>.container>div{
+	float: left;
+	width: 33.33%;
+}
+/* кнопки белого блока */
+.background-top a{
+	border-right:1px solid #d2d2d2;
+	display:block;
+	text-align: center;
+	padding:35px 0;
+	color:black;
+}
+/* первая кнопка */
+.first{
+	border-left:1px solid #d2d2d2;
+}
+/* иконки кнопок */
+.background-top i{
+	font-size:5.5em;
+	margin-bottom: 10px;
+	color: #f5c506;
+}
+/* желтый блок */
+.background-center{
+	background-image: url(../img/bgcentr.png);
+	background-size:cover;
+	padding-top:40px;
+	padding-bottom:21px;
+	color:white;
+	background-position:center;
+}
+.background-center h1{
+	margin-bottom:38px;
+}
+.cont{
+	display: flex;
+}
+/* текстовый блок */
+.text-block{
+	width: 50%;
+	padding:20px 30px;
+	padding-bottom:0;
+	background-color: #ec9e03;
+}
+.normal-text{
+	text-transform: none;
+	font-size:31px;
+}
+.right-text{
+	color: white;
+	float: right;
+	margin:10px;
+}
+/* плеер 2 */
+.player2{
+	width: 50%;
+	background-image: url(../img/play2.png);
+	background-size:cover;
+	background-position-x:-34px;
+	background-position-y:center;
+}
+/* твит блок */
+.wrap-twit{
+	width: 36%;
+	display:flex;
+	justify-content:flex-end;
+}
+.twiter{
+	background-color: #ec9e03;
+	display:flex;
+	justify-content:space-between;
+	width: 329px;
+	flex-direction:column;
+}
+.numb-tw{
+	text-align: right;
+	padding:17px;
+	padding-bottom:0;
+}
+.ic-twit{
+	font-size:10em;
+	color:#c18000;
+	line-height: 140px;
+	text-align: center;
+}
+/* дата блок */
+.date-block{
+	width: 113px;
+	text-align: center;
+	padding:8px 0;
+	background-color: #ddb101;
+}
+.num-date{
+	font-size:30px;
+}
+.m-date{
+	font-size:20px;
+	color: #b26529;
+}
+/* скрол */
+.scroll{
+	margin: 43px auto 0px;
+	width: 900px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius:8px;
+}
+.but-scr{
+	display: block;
+	background-color: #ec9e03;
+	border-radius:8px;
+	height: 15px;
+	width: 197px;
+	margin-left: 298px;
+}
+/* верх футер */
+.background-bottom{
+	background-image: url(../img/footbg.png);
+	background-size:cover;
+	background-position:center;
+}
+.background-bottom h1{
+	margin-top:45px;
+	color: #f5c506;
+	text-align: center;
+}
+/* левая панель футера */
+.left-foot{
+	float: left;
+}
+/* блока акция */
+.action{
+	display: block;
+	font-size:15px;
+	text-align: center;
+	background-color: #f5c506;
+	width: 116px;
+	height: 116px;
+	line-height: 116px;
+	color: white;
+	border-radius:50%;
+	position:absolute;
+}
+/* изображения */
+.img-set{
+	padding-top: 43px;
+	padding-bottom:105px;
+	overflow: hidden;
+	width: 100%;
+}
+.img-set img{
+	margin-left: 5%;
+	float: left;
+}
+.img-set :nth-child(1){
+	width: 55%;
+}
+.img-set :nth-child(2){
+	width: 22%;
+	margin-top:7.2%;
+}
+.img-set :nth-child(3){
+	width: 8%;
+	margin-top:23.2%;
+}
+/* правый футер */
+.right-foot{
+	float: left;
+	padding-top:70px;
+	color: #f5c506;
+	width: 379px;
+	padding-left:90px;
+}
+.right-foot li{
+	margin:20px 0;
+	font-size:49px;
+	line-height: 26px;
+}
+.right-foot a{
+	color: #a9a9a7;
+	text-transform: none;
+	font-size:20px;
+	line-height: 26px;
+	vertical-align: top;
+}
+/* нижний футер */
+footer{
+	padding:6px 0;
+	background-color: #4c4c4c;
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+footer a >*{
+	vertical-align: middle;
+	font-size:40px;
+	color: white;
+	margin-right:10px;
+	text-shadow: 0 2px 0 black;
+	font-style:oblique;
+}
+footer .container> span{
+	float: right;
+	text-transform: none;
+	color: white;
+	font-size:20px;
+	line-height: 83px;
+}
+
+
+
+

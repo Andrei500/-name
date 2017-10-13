@@ -1,0 +1,282 @@
+@import url('reset.css');
+*{
+	margin:0;
+	padding:0;
+}
+body, h1,h2,h3,h4{
+	text-transform: uppercase;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+/* контейнер */
+.container{
+	width: 640px;
+	margin:0 auto;
+	overflow: hidden;
+}
+/* шапка */
+header{
+	overflow: hidden;
+	position: relative;
+	z-index:2;
+}
+header> *{
+	vertical-align: middle;
+}
+.background-header{
+	background-image: url(../img/bghead.png);
+	background-size:cover;
+	min-width: 640px;
+}
+.background-header> .container{
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+	position: relative;
+}
+/* логотип */
+.logo{
+	display:inline-block;
+	float:left;
+	background-color: #444;
+	font-size:10px;
+	padding:11px 0;
+	text-align: center;
+	width: 186px;
+}
+.logo *{
+	display:inline-block;
+	color: white;
+	vertical-align: middle;
+}
+.logo img{
+	width: 40px;
+}
+/* навигация */
+nav{
+	display: inline-block;
+	float:left;
+	background-color: #f5c506;
+	width: 454px;
+}
+/* кнопки навигации */
+nav li{
+	float: left;
+	list-style-type: none;
+	width: 33%;
+	text-align: center;
+	border-left:1px solid #dcb105;
+}
+nav a{
+	color: #b99403;
+	line-height: 62px;
+	display: block;
+}
+nav i{
+	margin-right:10px;
+	font-size:20px !important;
+}
+/* слайдер */
+/* плеер */
+.player1{
+	background-image: url(../img/play1.png);
+	background-size:cover;
+	width: 650px;
+	height: 328px;
+	margin-top: -5px;
+	margin-left: -5px;
+}
+/* белая панель */
+.background-top{
+	background-image: url(../img/bgtop.png);
+	background-size:cover;
+	min-width: 640px;
+}
+.background-top>.container>div{
+	float: left;
+	width: 33.33%;
+}
+/* кнопки белого блока */
+.background-top a{
+	display:block;
+	text-align: center;
+	padding:35px 0;
+	color:black;
+}
+/* иконки кнопок */
+.background-top i{
+	font-size:5.5em;
+	margin-bottom: 10px;
+	color: #f5c506;
+}
+/* желтый блок */
+.cont{
+	display: flex;
+	color:white;
+}
+/* текстовый блок */
+.text-block{
+	width: calc(50% - 60px - 20px);
+	padding:20px 30px;
+	padding-bottom:0;
+	background-color: #ec9e03;
+	margin:10px;
+}
+.normal-text{
+	text-transform: none;
+	font-size:31px;
+}
+.right-text{
+	color: white;
+	float: right;
+	margin:10px;
+}
+/* плеер 2 */
+.player2{
+	margin:10px;
+	margin-left: 0;
+	width: calc(50% - 10px);
+	background-image: url(../img/play2.png);
+	background-size:cover;
+	background-position-x:-34px;
+}
+/* твит блок */
+.wrap-twit{
+	background-color: #f5c507;
+	display:flex;
+	padding:17px 0;
+}
+.twiter{
+	width: 50%;
+	font-size:10em;
+	color:#c18000;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.coment{
+	width: 50%;
+}
+.messg{
+	background-color: white;
+	color:black;
+	padding:4px 17px;
+	border-radius:8px;
+	text-transform: none;
+	font-size:14px;
+	margin:7px auto;
+	width: 258px;
+}
+.inp{
+	margin:7px 0;
+	overflow: hidden;
+	padding:0 17px;
+}
+.texti{
+	border-radius: 11px 0 0 11px;
+	float: left;
+	border:1px solid #d0a806;
+	line-height: 29px;
+	width: 198px;
+}
+.sub{
+	width: 86px;
+	border-radius: 0 11px 11px 0;
+	float: left;
+	text-align: center;
+	background-color: #e6a523;
+	border:1px solid #d0a806;
+	line-height: 29px;
+	color: white;
+}
+/* верх футер */
+.background-bottom{
+	background-color: #474747;
+	background-size:cover;
+	min-width: 640px;
+}
+.background-bottom h1{
+	margin-top:45px;
+	color: #f5c506;
+	text-align: center;
+}
+/* левая панель футера */
+.left-foot{
+	float: left;
+}
+/* блока акция */
+.action{
+	display: block;
+	font-size:15px;
+	text-align: center;
+	background-color: #f5c506;
+	width: 116px;
+	height: 116px;
+	line-height: 116px;
+	color: white;
+	border-radius:50%;
+	position:absolute;
+}
+/* изображения */
+.img-set{
+	padding-top: 43px;
+	padding-bottom:105px;
+	overflow: hidden;
+}
+.img-set img{
+	margin-left:20px;
+	float: left;
+}
+.img-set :nth-child(2){
+	margin-top:42px;
+}
+.img-set :nth-child(3){
+	margin-top:153px;
+}
+/* правый футер */
+.right-foot{
+	float: left;
+	padding-top:70px;
+	color: #f5c506;
+	width: 379px;
+	padding-left:90px;
+}
+.right-foot li{
+	margin:20px 0;
+	font-size:49px;
+	line-height: 26px;
+}
+.right-foot a{
+	color: #a9a9a7;
+	text-transform: none;
+	font-size:20px;
+	line-height: 26px;
+	vertical-align: top;
+}
+/* нижний футер */
+footer{
+	padding:6px 0;
+	background-color: #4c4c4c;
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+	min-width: 640px;
+}
+footer a >*{
+	vertical-align: middle;
+	font-size:40px;
+	color: white;
+	margin-right:10px;
+	text-shadow: 0 2px 0 black;
+	font-style:oblique;
+}
+footer .container> span{
+	float: right;
+	text-transform: none;
+	color: white;
+	font-size:20px;
+	line-height: 83px;
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+.pp{
+	background-repeat:no-repeat; 
+	background-position-x:center; 
+	position: absolute; 
+	height:3000px; 
+	width:100%;
+	z-index:1;
+	opacity:0.4;
+}
+@media(min-width:1024px){
+	.pp{background-image:url(img/1024px.png);}
+}
