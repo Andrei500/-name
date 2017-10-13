@@ -1,0 +1,228 @@
+@import url('reset.css');
+
+/* сброс стилей */
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color: #444;
+}
+a:hover{
+	color: #000;
+}
+li{
+	list-style-type:none;
+}
+.over{
+	overflow: hidden;
+}
+.w50> :nth-child(1){
+	width: 48%;
+	margin-right:2%;
+	float: left;
+}
+.w50> :nth-child(2){
+	width: 48%;
+	margin-left:2%;
+	float: left;
+}
+.container-top{
+	box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+/* шапка */
+header{
+	overflow: hidden;
+	font-size:1.1em;
+	max-width: 1170px;
+	margin:0 auto;
+}
+header >*{
+	float:left;
+}
+/* логотип */
+.logo{
+	
+	padding:5px 20px;	
+}
+.logo img{
+	height: 60px;
+	display: block;
+}
+/* блок контакы и соц кнопки */
+.contact{
+	border-right:1px solid silver;
+	border-left:1px solid silver;
+	padding:0 20px 0;
+	height: 70px;
+	text-align: center;
+}
+.contact >a{
+	line-height: 35px;
+}
+.social >*{
+	display: inline-block;
+	margin:2px;
+	width: 25px;
+	height: 25px;
+	background-color: #000;
+}
+/* соц кнопки фон */
+.vk, .ok, .viber, .whats, .ais{
+	background-image: url(../img/icons.png);
+	background-size:100%;
+}
+.ok{background-position:0 -25px;} .viber{background-position:0 -50px;}
+.whats{background-position:0 -75px;} .ais{background-position:0 -100px;}
+
+/* кнопка скрытого меню */
+.butt-menu{
+	display: none;
+	cursor:pointer;
+	line-height: 70px;
+	width: 70px;
+	text-align: center;
+	float: right;
+	font-size:2em;
+}
+/* меню шапки */
+.main_menu, .reg-submit{
+	float: right;
+}
+.main_menu ul{
+	display: flex;
+	justify-content: center;
+}
+/* елемнты меню */
+.main_menu li{
+	display: inline-block;
+	line-height: 70px;
+}
+.main_menu li a{
+	display: block;
+	padding:0 20px;
+	text-align: center;
+}
+/* кнопка отправки */
+.reg-submit{
+	padding:0 20px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 160px;
+	margin:10.5px 20px;
+	background: linear-gradient(to top,#fe960c,#fedc4f);
+	border-radius:15px;
+	box-shadow: 0 4px 0 #d67a01;
+	cursor:pointer;
+}
+@media (max-width:1070px) {
+	.main_menu{
+		width: 100%;
+		background-color:#feb60c;
+	}
+	.main_menu li{
+		margin:0 3%;
+	}
+}
+@media (max-width:700px) {
+	.contact{
+		display: none;
+	}
+}
+@media (max-width:470px) {
+	.main_menu ul{
+		flex-direction:column;
+		display:none;
+	}
+	.reg-submit{
+		display: none;
+	}
+	.logo img{
+		height: 50px;
+		margin:5px;
+	}
+	.butt-menu{
+		display: block;
+	}
+	/* класс открытия меню */
+	.visible-nav{		
+		display:flex !important;
+	}
+}
+/* выпадающая форма */
+.form-alert{
+	position:absolute;
+	display: none;
+	background-color:rgba(0,0,0,0.7);
+	width: 100%;
+	min-height: 100%;
+	cursor: pointer;
+	overflow-y: scroll;
+	top:0;
+    bottom: 0;
+}
+.form-alert form{
+	width: 400px;
+	margin:50px auto;
+	background-color:white;
+	border-radius:20px;
+	padding:40px;
+	cursor:auto;
+}
+form h1{
+	margin:0;
+	text-align: center;
+}
+form h3{
+	padding:20px 0;
+	color: #3b7bc7;
+}
+label{
+	font-size:1.2em;
+}
+label input{
+	margin-right:20px;
+}
+.hr{
+	height: 3px;
+	background-color:#fe960c;
+	margin-top:20px;
+}
+input[type='text'], select{
+	display: block;
+	width: calc(90% - 4px);
+	line-height: 45px;
+	height: 45px;
+	border:2px solid #ccc;
+	padding:0 5%;
+	font-size:1.2em;
+	margin-bottom: 20px;
+}
+select{
+	height: calc(45px + 4px);
+	width: 100%;
+}
+.form-alert .reg-submit{
+	width: 100%;
+	margin:0;
+	padding:0;
+	float: none;
+}
+.close{
+	font-size:3.5em;
+	position:absolute;
+	right:40px;
+	top:40px;
+	color:#ccc;
+	position:fixed;
+}
+.close:hover{
+	color:#eee;
+}
+
+
+

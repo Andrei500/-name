@@ -1,0 +1,261 @@
+@import url('reset.css');
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color:white;
+}
+a:hover{									/* сброс настроики бутстрапа */
+	text-decoration:none;
+	color:black;
+}
+h1,h2{										/* сброс отступов параграфов */
+	margin:0;
+}
+h1{
+	font-size:2.8em;
+}
+.centered{
+	text-align:center;
+}
+/* шапка */
+.background{								/* фоновое изображение */
+	background-image:url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:600px;
+}
+/* навигация */
+nav{											/* блок навигации */
+	background-color:white;
+	margin-top:20px;
+	line-height:4em;
+	
+}
+.logo{										/* логотип с лева */
+	margin-left:3%;
+	font-size:1.8em;
+	color:#1ab798;
+}
+nav .pull-right{								/* кнопки с права */
+	margin-top:3px;
+	margin-right:3%;
+	color:#7e7c7e;
+}
+nav .pull-right:hover{						/* ефект наведения */
+	color:#282528;
+}
+.iconmain{									/* иконка меню */
+	font-size:2em;
+}
+/* навигация */
+
+.primari_menu{
+	margin-top:2px;
+	position:absolute;
+	
+	z-index:1;
+	
+}
+.primari_menu a{
+	border-top:1px solid #ddd;
+	display:block;
+	color:#333;
+	background-color:white;
+	text-align:center;
+	opacity: 0.9;
+}
+.primari_menu a:hover{
+	background-color:#ddd;
+}
+
+/* левая панель */
+.left_panel{								/* левая панель шапки */
+	color:white;
+	margin-top:130px;
+}
+.list_panel{								/* панель списка */
+	margin-top:32px;
+	margin-bottom:35px;
+}
+.list_panel a{								/* ссылки блочные */
+	display:block;
+}
+.left_panel i{								/* иконка стрелка */
+	position:relative;
+	top:2.3px;
+	margin-right:2%;
+	font-size:1.5em;
+}
+.button_dow{								/* кнопка загрузить */
+	background-color:#1ab798;
+	line-height:35px;
+	text-align:center;
+}
+/* левая панель */
+
+/* изображение */
+header img{
+	margin-top:70px;
+	height:auto;
+	max-width:500px;
+	position:static;
+	float:right;
+}
+.rigmar{
+	float:right;
+}
+/* контент */
+.content{
+	margin-top:90px;
+}
+.content a{
+	color:#444;
+	display:block;
+}
+.content a:hover{
+	color:black;
+}
+img:hover{
+	position:relative;
+	bottom:2px;
+}
+.row> h1{
+	text-transform:uppercase;
+	color:#1ab798;
+}
+.content i , .block_ico i{
+	font-size:2.4em;
+	margin:0 auto;
+}
+.str, .info{
+	margin-top:60px;
+}
+/* голубая панель */
+.blue_block{
+	background-color:#31d4e7;
+	margin:20px 0;
+}
+.left_blue{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.blue_block h1{
+	color:black;
+}
+.blue_block div{
+	color:white;
+}
+.block_ico i{
+	color:white;
+	line-height:60px;
+}
+.block_ico{
+	margin-top:20px;
+}
+.block_ico>a{
+	margin-right:3%;
+	display:inline-block;
+	background-color:#0098cd;
+	border-radius:50%;
+	text-align:center;
+	width:60px;
+	height:60px;
+}
+.block_ico>a:hover{
+	background-color:#222222;
+}
+.marg{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+/* фото панель */
+.photor h4{
+	 margin:5px 0;
+}
+.photor img{
+	width:100%;
+}
+/* фото директора */
+.der_ph{
+	margin:40px 0;
+}
+.round_ph{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	border:1px solid black;
+	overflow:hidden;
+	margin:15px auto;
+}
+.der_ph img{
+	width:100%;
+}
+/* кнопка лист */
+.butn{
+	margin:50px 0;
+}
+#actives{
+	background-color:#1ab798;
+}
+.butn a{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#d4d3d4;
+	display:inline-block;
+}
+.butn a:hover{
+	background-color:#1ab798;
+}
+/* контент */
+
+/* футер */
+.background_ft{
+	background-image:url(../img/footer.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer {
+	color:#ddd;
+	padding:20px 0;
+}
+.gray{
+	color:#888;
+}
+.bluefb{
+	background-color:#3b5997 !important;
+}
+.bluetw{
+	background-color:#3ec2f3 !important;
+}
+.redgoo{
+	background-color:#e44c41 !important;
+}
+footer form input{
+	height:35px;
+	margin-bottom:10px;
+	border-radius:5px;
+}
+footer form textarea{
+	padding-top:10px;
+	height:150px;
+	border-radius:5px;
+}
+.submit{
+	line-height:40px;
+	border-radius:5px;
+	background-color:#31d4e7;
+	color:white;
+	text-align:center;
+	text-transform:uppercase;
+}
+.bord{
+	overflow:hidden;
+}
+.list{
+
+}
